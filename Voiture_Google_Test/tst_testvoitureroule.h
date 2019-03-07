@@ -73,9 +73,7 @@ TEST_P(TestVoitureRouler, Neuve)
 }
 
 INSTANTIATE_TEST_SUITE_P(GroupeNewCar,TestVoitureRouler,
-                         //Values(0,10000,149999,150000
-                          Range(0,150000,10000
-                                ));
+                         Values(0,10000,149999,150000,150001));
 
 
 
