@@ -73,7 +73,7 @@ TEST_P(TestVoitureRouler, Neuve)
 }
 
 INSTANTIATE_TEST_SUITE_P(GroupeNewCar,TestVoitureRouler,
-                         Values(0,10000,149999,150000,150001));
+                         Values(0,10000,149999,150000));
 
 
 
