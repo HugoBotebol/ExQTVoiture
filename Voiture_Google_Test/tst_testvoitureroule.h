@@ -46,7 +46,7 @@ TEST_F(TestVoitureOccasionRouler, NoGaz)
         //when/then
         EXPECT_THROW(occasion.rouler(parcours), std::invalid_argument);
 
-         EXPECT_EQ(occasion.kilometrage(),kilometrage)
+         EXPECT_THAT(occasion.kilometrage(),Eq(kilometrage))
                     << "Kilometrage incorrect";
          EXPECT_EQ(occasion.jaugeCarburant(), jaugeCarburant)
                     <<"Jauge Carburant incorrect"<<endl;
